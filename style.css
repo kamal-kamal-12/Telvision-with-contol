@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'bungee';
+    src: url('assets/font/Bungee-Regular.ttf') format('truetype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+}
+
+body{
+    background-image: url('assets/image/black.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    height: 90%;
+}
+
+.d1{
+    width: 515px;
+    height: 290px;
+    background-color: rgb(0, 0, 0);
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+    border-bottom: 20px solid black;
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d1 > video{
+    width: 100%;
+    height: 290px;
+    
+    
+}
+
+ p{
+    color: aliceblue;
+    position: relative;
+    right: 570px;
+    top: 147px;
+
+}
+
+.light{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    right: 370px;
+    top: 147px;
+    
+}
+
+.d2{
+    width: 200px;
+    height: 600px;
+    background-color: rgb(14, 12, 12);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.buttons {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+.buttons > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 97, 97);
+    user-select: none;
+    font-family: 'bungee';
+    font-size: 1.5rem;
+}
+
+.buttons > div:hover {
+    cursor: pointer;
+}
+
+.buttons > div:active {
+    background-color: white;
+    transform: translateY(-6px);
+    transition: transform 0.2s;
+}
+
+.button{
+     gap: 1rem;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button > .page_up{
+     width: 70px;
+    height: 30px;
+    border-radius: 100px 100px 0px 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 97, 97);
+    user-select: none;
+    font-family: 'bungee';
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 50px;
+    right: 5px;
+}
+
+.button > .page_up:hover {
+    cursor: pointer;
+}
+
+.button > .page_up:active {
+    background-color: white;
+        transform: translateY(-6px);
+         transition: transform 0.2s;
+}
+
+
+.buttonss{
+     flex-direction: row;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+    right: 5px;
+    gap: 1.5rem;
+}
+
+.buttonss > .vp{
+      width:30px;
+    height: 70px;
+    border-radius: 100px 0px 0px 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 97, 97);
+    user-select: none;
+    font-family: 'bungee';
+    font-size: 1.5rem;
+}
+
+.buttonss > .vp:hover {
+    cursor: pointer;
+}
+
+.buttonss > .vp:active {
+    background-color: white;
+        transform: translateY(-6px);
+         transition: transform 0.2s;
+}
+
+.buttonss > .vn{
+      width: 30px;
+    height: 70px;
+    border-radius: 0px 100px 100px 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 97, 97);
+    user-select: none;
+    font-family: 'bungee';
+    font-size: 1.5rem;
+}
+
+.buttonss > .vn:hover {
+    cursor: pointer;
+}
+
+.buttonss > .vn:active {
+    background-color: white;
+        transform: translateY(-6px);
+         transition: transform 0.2s;
+}
+
+.buttonss > .ok{
+      width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 97, 97);
+    user-select: none;
+    font-family: 'bungee';
+    font-size: 1.5rem;
+}
+
+.buttonss > .ok:hover {
+    cursor: pointer;
+
+}
+
+.buttonss > .ok:active {
+    background-color: white;
+        transform: translateY(-6px);
+         transition: transform 0.2s;
+}
+
+.button > .page_down{
+     width: 70px;
+    height: 30px;
+    border-radius: 0px 0px 100px 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 97, 97);
+    user-select: none;
+    font-family: 'bungee';
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 50px;
+    right: 5px;
+}
+
+.button > .page_down:hover {
+    cursor: pointer;
+}
+
+.button > .page_down:active {
+    background-color: white;
+        transform: translateY(-6px);
+        transition: transform 0.2s;
+}
+
+    .secpm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+        gap: 3rem;
+    }
+
+.secpm > .power{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:red;
+    user-select: none;
+    font-family: 'bungee';
+}
+
+.secpm > .power:hover {
+    cursor: pointer;
+}
+
+.secpm > .power:active {
+    background-color: rgb(241, 138, 100);
+     transform: translateY(-6px);
+        transition: transform 0.2s;
+}
+
+.secpm > .power > img{
+    width: 80%;
+}
+
+.secpm > .mute{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:green;
+    user-select: none;
+    font-family: 'bungee';
+}
+
+.secpm > .mute:hover {
+    cursor: pointer;
+}
+
+.secpm > .mute:active {
+    background-color: lightgreen;
+     transform: translateY(-6px);
+        transition: transform 0.2s;
+}
+
+.secpm > .mute > img{
+    width: 80%;
+}
